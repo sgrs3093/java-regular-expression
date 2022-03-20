@@ -5,6 +5,14 @@ import java.util.regex.Pattern;
 
 public class RegularExpression
 {
+
+    // if String has contains with this combination 'OR contains (Name.NameKey, 'sagar', WEIGHT(2))'
+    String orContainsPattern1 = "OR contains\\s*\\((.*),\\s*'(.*)'(,.*)?";//OR contains with space or without space
+    String orContainsPattern2 = "OR contains\\s\\((.*),\\s*'(.*)'(,.*)?";//OR contains with space
+    // if String has contains with this combination 'contains (Name.NameKey, 'sagar', WEIGHT(2))'
+    String containsPattern1 = "contains\\s*\\((.*),\\s*'(.*)'(,.*)?";// checking contains with space or without space
+    String containsPattern2 = "contains\\s\\((.*),\\s*'(.*)'(,.*)?";// checking contains without space
+
     public static void main (String[] args)
     {
 
