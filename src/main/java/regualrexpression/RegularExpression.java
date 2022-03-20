@@ -11,6 +11,8 @@ public class RegularExpression
         //String
         String line = "this is regular expression pattern for QT3000! OK?";
         String pattern = "(.*)(\\d+)(.*)";
+        //for matching any whitespace we can use below pattern
+        Pattern whitespace = Pattern.compile("\\s", Pattern.UNICODE_CHARACTER_CLASS);
 
         Pattern p = Pattern.compile(pattern);
 
